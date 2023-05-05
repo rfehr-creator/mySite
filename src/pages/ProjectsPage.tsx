@@ -25,6 +25,8 @@ export const ProjectPage = () => {
       description: "Hello Hello Hello Hello Hello Hello",
     },
   ]);
+
+  setProjects(projects);
   return (
     <Projects>
       <ul className="list-group list-group-flush">
