@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import { ProjectCard } from "../components/ProjectCard";
 const Projects = styled.div`
@@ -11,7 +10,7 @@ interface Project {
 }
 
 export const ProjectPage = () => {
-  const [projects, setProjects] = useState<Project[]>([
+  const projects: Project[] = [
     {
       title: "Trailer Tracking Project",
       description: "Hello Hello Hello Hello Hello Hello",
@@ -24,14 +23,12 @@ export const ProjectPage = () => {
       title: "Custom PC",
       description: "Hello Hello Hello Hello Hello Hello",
     },
-  ]);
-
-  setProjects(projects);
+  ];
   return (
     <Projects>
       <ul className="list-group list-group-flush">
-        {projects.map((x) => {
-          return <ProjectCard {...x} />;
+        {projects.map((x, index) => {
+          return <ProjectCard key={index} {...x} />;
         })}
         ;
       </ul>
