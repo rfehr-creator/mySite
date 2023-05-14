@@ -20,6 +20,7 @@ export const ProjectCard = ({ title, description }: Props) => {
     <Card className="card">
       <CardHeader>{title}</CardHeader>
       <hr className="hr"></hr>
+      <div hidden={true}>{description}</div>
     </Card>
   );
 };
