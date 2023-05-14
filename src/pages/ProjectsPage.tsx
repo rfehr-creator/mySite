@@ -25,7 +25,7 @@ export const ProjectPage = () => {
     },
   ];
   return (
-    <Projects>
+    <Projects hidden={true}>
       <ul className="list-group list-group-flush">
         {projects.map((x, index) => {
           return <ProjectCard key={index} {...x} />;

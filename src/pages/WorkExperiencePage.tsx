@@ -1,3 +1,3 @@
 export const WorkExperiencePage = () =>{
-    return <div>Work Experience</div>
+    return <div hidden={true}>Work Experience</div>
 }

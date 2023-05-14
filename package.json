@@ -1,5 +1,6 @@
 {
   "name": "mysite",
+  "homepage": "https://rolandfehr.ca",
   "private": true,
   "version": "0.0.0",
   "type": "module",
