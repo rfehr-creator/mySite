@@ -64,7 +64,7 @@ export const courses = [
   {
     courseId: "MATH1300",
     courseName: "Vector Geometry and Linear Algebra",
-    grade: "A",
+    grade: "B",
   },
   { courseId: "MATH1500", courseName: "Inoduction to Calculus", grade: "A+" },
 
