@@ -6,8 +6,12 @@ import { HomePage } from "./pages/HomePage";
 import { ProjectPage } from "./pages/ProjectsPage";
 import { EducationPage } from "./pages/EducationPage";
 import { WorkExperiencePage } from "./pages/WorkExperiencePage";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    document.title = "Roland Fehr";
+  });
   return (
     <BrowserRouter>
       <TopBar />
@@ -21,5 +25,4 @@ const App = () => {
     </BrowserRouter>
   );
 };
-
 export default App;
