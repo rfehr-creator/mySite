@@ -1,6 +1,5 @@
 import "./App.css";
 import { TopBar } from "./components/TopBar";
-import { Navbar } from "./components/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
 import { ProjectPage } from "./pages/ProjectsPage";
