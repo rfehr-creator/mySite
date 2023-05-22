@@ -1,14 +1,15 @@
 import styled from "styled-components";
+import theme from './../Theme'
 
 const Card = styled.div`
   margin: 5px;
   padding: 5px;
-  background-color: black;
+  background-color: ${theme.primary};
   color: white;
 `;
 
-const CardHeader = styled.div`
-  font-size: 20px;
+const CardHeader = styled.h4`
+  
 `;
 
 interface Props {
@@ -20,7 +21,7 @@ export const ProjectCard = ({ title, description }: Props) => {
     <Card className="card">
       <CardHeader>{title}</CardHeader>
       <hr className="hr"></hr>
-      <div hidden={true}>{description}</div>
+      <div hidden={false}>{description}</div>
     </Card>
   );
 };

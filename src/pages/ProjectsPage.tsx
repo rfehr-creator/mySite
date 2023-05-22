@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { ProjectCard } from "../components/ProjectCard";
+
+
 const Projects = styled.div`
   width: 400px;
 `;
@@ -12,25 +14,24 @@ interface Project {
 export const ProjectPage = () => {
   const projects: Project[] = [
     {
-      title: "Trailer Tracking Project",
-      description: "Hello Hello Hello Hello Hello Hello",
+      title: "Trailer Tracking",
+      description: " ",
     },
     {
       title: "Logbook Program",
-      description: "Hello Hello Hello Hello Hello Hello",
+      description: " ",
     },
     {
       title: "Custom PC",
-      description: "Hello Hello Hello Hello Hello Hello",
+      description: " ",
     },
   ];
   return (
-    <Projects hidden={true}>
+    <Projects>
       <ul className="list-group list-group-flush">
         {projects.map((x, index) => {
-          return <ProjectCard key={index} {...x} />;
+          return <ProjectCard key={index} {...x} />
         })}
-        ;
       </ul>
     </Projects>
   );
