@@ -12,6 +12,7 @@ const App = () => {
   useEffect(() => {
     document.title = "Roland Fehr";
   });
+
   return (
     <BrowserRouter>
       <TopBar />
